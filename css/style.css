@@ -469,10 +469,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/intro-bg.jpg) top center;
+  background: url(../img/intro-bg-desktop.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #intro {
+    background: url(../img/intro-bg-mobile.png) center center; /* Load mobile-optimized image */
+    background-size: cover; /* Ensure it covers the viewport */
+  }
 }
 
 #intro:before {
